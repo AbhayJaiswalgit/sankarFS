@@ -1,0 +1,15 @@
+{
+  "name": "nova-server",
+  "version": "1.0.0",
+  "description": "NOVA - Team Productivity Platform API Server",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed.js"
+  },
+  "keywords": ["nova", "project-management", "mern"],
+  "author": "NOVA Team",
+  "license": "MIT"
+}
