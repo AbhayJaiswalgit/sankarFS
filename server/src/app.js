@@ -20,6 +20,10 @@ const activityRoutes = require('./routes/activityRoutes');
 
 const app = express();
 
+// When running behind a proxy (Render, Vercel, etc.), enable trust proxy
+// so express-rate-limit and req.ip use the forwarded client IP.
+app.set('trust proxy', 1);
+
 // Security
 app.use(helmet());
 
